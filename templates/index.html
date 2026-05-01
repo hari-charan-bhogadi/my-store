@@ -1,0 +1,10 @@
+<h1>My Store</h1>
+<a href="/add">Add Product</a>
+
+{% for p in products %}
+<div>
+    <img src="{{ p[3] }}" width="150">
+    <h3>{{ p[1] }}</h3>
+    <p>₹{{ p[2] }}</p>
+</div>
+{% endfor %}
